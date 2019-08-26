@@ -8,8 +8,8 @@ import DiveBar from '../images/Dive-bar.jpg';
 
 class Cards extends Component {
 
-    onHover = () => {
-        
+    ClickedHandleEvent = () => {
+        return alert('Clicked')
     };
 
     render() {
@@ -24,6 +24,7 @@ class Cards extends Component {
             width: '25%',
             height: '200px',
             boxShadow: '5px 10px lightgrey',
+            cursor: 'pointer',
         };
 
         const parks = {
@@ -37,6 +38,7 @@ class Cards extends Component {
             width: '25%',
             height: '200px',
             boxShadow: '5px 10px lightgrey',
+            cursor: 'pointer',
         };
 
         const concerts = {
@@ -50,6 +52,7 @@ class Cards extends Component {
             width: '25%',
             height: '200px',
             boxShadow: '5px 10px lightgrey',
+            cursor: 'pointer',
         };
 
         const clubs = {
@@ -63,6 +66,7 @@ class Cards extends Component {
             width: '25%',
             height: '200px',
             boxShadow: '5px 10px lightgrey',
+            cursor: 'pointer',
         };
 
         const diveBar = {
@@ -76,6 +80,7 @@ class Cards extends Component {
             width: '25%',
             height: '200px',
             boxShadow: '5px 10px lightgrey',
+            cursor: 'pointer',
         };
 
         const allEvents = {
@@ -89,13 +94,14 @@ class Cards extends Component {
             width: '25%',
             height: '200px',
             boxShadow: '5px 10px lightgrey',
+            cursor: 'pointer',
         };
 
         return (
             <div className="container">
             <div>
                 <h1 style={allEvents}>All Events</h1>
-                <h1 style={beaches} onMouseOver={this.onHover}>Beaches</h1>
+                <h1 style={beaches} onClick={this.ClickedHandleEvent}>Beaches</h1>
                 <h1 style={parks}>Parks</h1>
             </div>
             <div>
