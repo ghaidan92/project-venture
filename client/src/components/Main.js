@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import AuthService from './AuthService';
 import API from '../utils/API';
+import Cards from './Cards'
 
 class Main extends Component {
   constructor() {
@@ -45,7 +46,6 @@ class Main extends Component {
   render() {
     return (
       <div className="container">
-        <h1>Signup</h1>
         <div class="modal fade" id="exampleModal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
           <div class="modal-dialog" role="document">
             <div class="modal-content">
@@ -126,7 +126,12 @@ class Main extends Component {
             </div>
           </div>
         </div>
-        <p><Link to="/login">Go to Login</Link></p>
+
+
+        <Cards />
+
+
+        {/* <p><Link to="/login">Go to Login</Link></p> */}
       </div>
     );
   }
