@@ -26,12 +26,12 @@ class Navbar extends Component {
                 <div>
                     <ul className="navbar-nav">
                         <li className="nav-item">
-                            <button disabled type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+                            <button disabled type="button" class="btn btn-secondary" data-toggle="modal" data-target="#exampleModal">
                                 Sign Up
                             </button>
                         </li>
                         <li className="nav-item">
-                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal1">
+                            <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#exampleModal1">
                                 Log In
                             </button>
                         </li>
@@ -44,7 +44,7 @@ class Navbar extends Component {
 
     render() {
         return (
-            <nav className="navbar navbar-expand-lg navbar-dark bg-primary">
+            <nav className="navbar navbar-expand-lg navbar-dark bg-secondary">
                 <div className="container">
                     <Link className="navbar-brand" to="/">Venture</Link>
                     <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
