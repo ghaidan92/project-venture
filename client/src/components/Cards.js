@@ -100,7 +100,7 @@ class Cards extends Component {
         return (
             <div className="container">
             <div>
-                <h1 style={allEvents}>All Events</h1>
+                <h1 style={allEvents} onClick={this.ClickedHandleEvent}>All Events</h1>
                 <h1 style={beaches} onClick={this.ClickedHandleEvent}>Beaches</h1>
                 <h1 style={parks}>Parks</h1>
             </div>
