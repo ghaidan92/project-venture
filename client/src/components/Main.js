@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import AuthService from './AuthService';
 import API from '../utils/API';
 import Cards from './Cards'
+import PopUp from './PopUp';
 
 class Main extends Component {
   constructor() {
@@ -129,6 +130,7 @@ class Main extends Component {
 
 
         <Cards />
+        <PopUp />
 
 
         {/* <p><Link to="/login">Go to Login</Link></p> */}

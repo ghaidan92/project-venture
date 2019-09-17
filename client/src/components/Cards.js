@@ -6,10 +6,14 @@ import AllEvents from '../images/allEvents.jpg';
 import Clubs from '../images/Clubs.jpg';
 import DiveBar from '../images/Dive-bar.jpg';
 
+import PopUp from './PopUp';
+
 class Cards extends Component {
 
-    ClickedHandleEvent = () => {
-        return alert('Clicked')
+    
+    ClickedHandleEvent = (e) => {
+       return alert('yo')
+        
     };
 
     render() {
@@ -101,7 +105,7 @@ class Cards extends Component {
             <div className="container">
             <div>
                 <h1 style={allEvents} onClick={this.ClickedHandleEvent}>All Events</h1>
-                <h1 style={beaches} onClick={this.ClickedHandleEvent}>Beaches</h1>
+                <h1 style={beaches}>Beaches</h1>
                 <h1 style={parks}>Parks</h1>
             </div>
             <div>
